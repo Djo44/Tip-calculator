@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h3>SPLI</h3>
+      <h3>TTER</h3>
+      <div class="row">
+        <div class="col-md-6 col-xs-12 col-sm-4 left">
+          <div class="bill">
+            <h6>Bill</h6>
+            <input type="number" name="" id="bill" value="0" step="1" min="0" class="text-end" />
+          </div>
+
+          <div class="btn-container">
+            <h6>Select Tip %</h6>
+            <button class="btn btn-dark tip-5">5%</button>
+            <button class="btn btn-dark tip-10">10%</button>
+            <button class="btn btn-dark tip-15">15%</button>
+            <button class="btn btn-dark tip-25">25%</button>
+            <button class="btn btn-dark tip-50">50%</button>
+            <input type="number" name="" id="custom" step="1" placeholder="custom" style="font-size: 20px" min="0" max="100" class="text-center btn-dark bg-light text-dark" />
+          </div>
+          <div class="ppl">
+            <div class="d-flex error">
+              <h6>Number of People</h6>
+              <span class="show-error">Can't be zero</span>
+            </div>
+            <div>
+              <input type="number" name="" id="person" step="1" value="0" class="text-end" min="0" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12 col-sm-8 right">
+          <div class="tip-amount">
+            <div class="text-container">
+              <h6>Tip Amount</h6>
+              <small>/ person</small>
+            </div>
+            <h1 class="tip-amount-person">$0.00</h1>
+          </div>
+          <div class="total">
+            <div class="text-cointainer">
+              <h6>Total Amount</h6>
+              <small>/ person</small>
+            </div>
+            <h1 class="total-person">$0.00</h1>
+          </div>
+          <button class="reset btn-sucess btn" onclick="reset()">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
